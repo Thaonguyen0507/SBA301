@@ -33,6 +33,15 @@ export default function Header({ currentPage, onNavigate }) {
               Contact
             </a>
           </li>
+          <li>
+            <a
+              href="#orchid"
+              onClick={(e) => { e.preventDefault(); onNavigate('orchid'); }}
+              style={{ opacity: currentPage === 'orchid' ? 1 : 0.7 }}
+            >
+              Orchid
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

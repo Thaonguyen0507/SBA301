@@ -1,0 +1,75 @@
+.filter-sort-container {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.filter-select,
+.sort-select,
+.search-input {
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.filter-select:focus,
+.sort-select:focus,
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  background-color: white;
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Input Group Styling */
+.input-group-text {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  border-right: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-sort-container {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-label {
+    font-size: 0.85rem;
+  }
+  
+  .filter-select,
+  .sort-select,
+  .search-input {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-sort-container {
+    padding: 0.75rem;
+  }
+}

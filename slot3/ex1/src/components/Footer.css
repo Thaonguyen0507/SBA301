@@ -1,0 +1,62 @@
+/* Footer Styles */
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer .name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .subtext {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+footer .contact {
+    text-align: right;
+}
+
+footer .contactLabel {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+footer .email {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.95rem;
+    color: #fff;
+}

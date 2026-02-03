@@ -1,0 +1,130 @@
+/* Orchid Page Styles */
+.orchid-page {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.page-header h1 {
+    font-weight: 700;
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.orchid-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.orchid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.image-container {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+
+.orchid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.orchid-card:hover .orchid-image {
+    transform: scale(1.05);
+}
+
+.special-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.orchid-header .h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.orchid-meta {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.orchid-info {
+    background: #f8f9ff;
+    border-radius: 8px;
+    padding: 1rem;
+    border-left: 4px solid #667eea;
+}
+
+.info-item {
+    color: #555;
+}
+
+.info-item strong {
+    color: #333;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.orchid-description {
+    border-left: 4px solid #667eea;
+    padding-left: 1rem;
+    background: #f8f9ff;
+    border-radius: 0 8px 8px 0;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.orchid-description h5 {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.price-section h4 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .orchid-page {
+        padding-top: 1rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .image-container {
+        min-height: 300px;
+    }
+}
+
+/* Animation for page load */
+.orchid-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
